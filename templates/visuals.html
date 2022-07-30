@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Visualization</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="py-12 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Data Visualization</p>
+          <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">To view a data visualization, please click on the button corresponding to the visualization you want.</p>
+          <br>
+          <br>
+        </div>
+        <form action='/visuals'>
+          <div class="mt-10">
+            <dl class="space-y-0 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-0">
+              <a href="http://127.0.0.1:5500/GenderBar.html" class="btn btn-primary" button type="submit">Gender Chart</a>
+              <a href="http://127.0.0.1:5500/LoanStatus.html" class="btn btn-primary" button type="submit">Loan Status Chart</a>
+            </dl>
+        </div>
+          <div class="mt-10">
+            <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+              <a href="http://127.0.0.1:5500/Dependents.html" class="btn btn-primary" button type="submit">Dependents Chart</a>
+              <a href="http://127.0.0.1:5500/Education.html" class="btn btn-primary" button type="submit">Education of Applicants Chart</a>
+            </dl>
+          </div>
+        
+        <div class="mt-10">
+          <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+            <a href="http://127.0.0.1:5500/Employment.html" class="btn btn-primary" button type="submit">Self Employment Status of Applicants Chart</a>
+            <a href="http://127.0.0.1:5500/Property.html" class="btn btn-primary" button type="submit">Property Area of Applicants Chart</a>
+          </dl>
+        </div>
+        <div class="mt-10">
+          <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+            <a href="http://127.0.0.1:5500/Term.html" class="btn btn-primary" button type="submit">Loan Amount Term of Applicants Chart</a>
+            <a href="http://127.0.0.1:5500/Amount.html" class="btn btn-primary" button type="submit">Loan Amount of Applicants Chart</a>
+          </dl>
+        </div>
+        <div class="mt-10">
+          <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+            <a href="http://127.0.0.1:5500/Credit.html" class="btn btn-primary" button type="submit">Credit History of Applicants Chart</a>
+            <a href="http://127.0.0.1:5500/Income.html" class="btn btn-primary" button type="submit">Total Income of Applicants Chart</a>
+          </dl>
+        </div>
+        <div class="mt-10">
+          <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+            <a href="http://127.0.0.1:5500/PCA.html" class="btn btn-primary" button type="submit">Total Income and Credit History Based on Loan Status and Gender Chart</a>
+            <a href="http://127.0.0.1:5500/Scatter.html" class="btn btn-primary" button type="submit">Total Income vs. Loan Status Chart</a>
+          </dl>
+        </div>
+        <br>
+        <br>
+        <div class="mt-10">
+          <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-5 md:gap-x-8 md:gap-y-10">
+            <a href="./" class="btn btn-primary" button type="submit">Back</a>
+            <a href="./prediction" class="btn btn-primary" button type="submit">Check Eligibility</a>
+          </dl>
+        </div>
+      </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
