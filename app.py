@@ -15,7 +15,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
 app = Flask(__name__)
-trainFile = pd.read_csv("/Users/Owner/Home Loan Prediction/train.csv")
+trainFile = pd.read_csv("train.csv")
 trainFile['Total_Income'] = trainFile['ApplicantIncome'] + trainFile['CoapplicantIncome']
 dropVariables = ['ApplicantIncome', 'CoapplicantIncome', 'Loan_ID']
 trainFile = trainFile.drop(columns = dropVariables, axis = 1)
@@ -44,7 +44,7 @@ pd.get_dummies(trainFile['LoanAmount'], drop_first=True)
 pd.get_dummies(trainFile['Loan_Amount_Term'], drop_first=True)
 pd.get_dummies(trainFile['Total_Income'], drop_first=True)
 
-testFile = pd.read_csv("/Users/Owner/Home Loan Prediction/test.csv")
+testFile = pd.read_csv("test.csv")
 testFile['Gender'] = testFile['Gender'].fillna(testFile['Gender'].mode()[0])
 testFile['Married'] = testFile['Married'].fillna(testFile['Married'].mode()[0])
 testFile['Dependents'] = testFile['Dependents'].fillna(testFile['Dependents'].mode()[0])
